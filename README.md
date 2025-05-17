@@ -1,5 +1,5 @@
 
-# 📊 Finance LLM Web App
+# 📊 Frontend
 
 This is a secure web-based LLM-powered financial query assistant built using **React** and **Express** (backend assumed). It allows users to input natural language queries that get transformed into SQL, while protecting against prompt injection and unauthorized data manipulation (e.g., DELETE, UPDATE).
 
