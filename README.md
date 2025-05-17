@@ -19,12 +19,6 @@ This is a secure web-based LLM-powered financial query assistant built using **R
 ## 📦 Installation
 
 ### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/finance-llm.git
-cd finance-llm
-```
-
 ### 2. Install dependencies
 
 ```bash
@@ -75,17 +69,6 @@ The app will be available at `http://localhost:5173`.
 | TRANSFER    | `transfer`, `send`, `move` | `xyz`, `xyzabc` | Elevated access |
 | DELETE      | `delete`, `erase`, `truncate` | `xyzabc` + `second PIN: 123321` | Admin-level operation |
 
----
-
-## 👩‍💼 Admin Access
-
-To log in as admin:
-
-1. Visit: `http://localhost:5173/admin`
-2. Use admin credentials (you can hardcode or secure this via the backend).
-3. Admins are redirected to the dashboard upon successful login.
-
----
 
 ## 💾 Query History
 
@@ -128,25 +111,6 @@ src/
 | `/bankbot`        | `BankAssistant`  | Bank-related query assistant       |
 | `/admin`          | Protected route  | Redirects to `AdminDashboard` if logged in |
 
----
 
-## 📋 To Do
 
-- Integrate a secure backend with authentication
-- Add persistent session history
-- Add unit and integration tests
-- Enable `QueryInputHi` for Hindi LLM support
 
----
-
-## 🛠️ Dev Notes
-
-- Uses `file-saver` for CSV download
-- Prompt keywords like "delete", "transfer", etc. are obfuscated before backend submission
-- Handles malicious prompt injection attempts gracefully
-
----
-
-## 📧 Contact
-
-For any issues or suggestions, feel free to open an issue or contact [your-email@example.com].
